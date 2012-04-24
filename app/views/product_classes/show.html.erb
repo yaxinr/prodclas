@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<%= simple_format @product_class.to_yaml %>
+<p>
+  <b>Code:</b>
+  <%= @product_class.code %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @product_class.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_class_path(@product_class.code) %> |
+<%= link_to 'Back', product_classes_path %>
