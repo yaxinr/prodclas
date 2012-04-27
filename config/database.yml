@@ -46,9 +46,9 @@ test:
   username: user1
   password: 1
 
-# production:
-  # adapter: mysql
-  # database: mydb
-  # host: instance12338.db.xeround.com:8336
-  # username: app4228753
-  # password: 1
+production:
+  adapter: mysql
+  database: mydb
+  host: instance12338.db.xeround.com:8336
+  username: app4228753
+  password: 1
