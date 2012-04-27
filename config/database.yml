@@ -46,10 +46,9 @@ test:
   username: user1
   password: 1
 
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: ProductClassification_production
-  pool: 5
-  username: ProductClassification
-  password:
+# production:
+  # adapter: mysql
+  # database: mydb
+  # host: instance12338.db.xeround.com:8336
+  # username: app4228753
+  # password: 1

@@ -5,11 +5,11 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :production do
-   gem 'therubyracer-heroku', '~> 0.8.1.pre3' # you will need this too
-end
-gem 'pg'
-
+# group :production do
+   # gem 'therubyracer-heroku', '~> 0.8.1.pre3' # you will need this too
+# end
+# gem 'pg'
+gem 'mysql'
 
 # Gems used only for assets and not required
 # in production environments by default.
