@@ -12,13 +12,23 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
-development:
-  adapter: postgresql
-  encoding: unicode
+# development:
+  # adapter: postgresql
+  # encoding: unicode
+  # database: ProductClassification_development
+  # pool: 5
+  # username: user1
+  # password: 1
+development:  
+  adapter: mysql2
+  charset: cp1251
+  encoding: cp1251
+  collation: cp1251_general_ci
   database: ProductClassification_development
   pool: 5
-  username: user1
-  password: 1
+  username: root
+  password: r1
+  socket: /tmp/mysql.sock
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -38,17 +48,35 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
+test:  
+  adapter: mysql2
+  charset: cp1251
+  encoding: cp1251
+  collation: cp1251_general_ci
+  database: ProductClassification_test
+  pool: 5
+  username: root
+  password: r1
+  socket: /tmp/mysql.sock
+# test:
+  # adapter: postgresql
+  # encoding: unicode
+  # database: ProductClassification_test
+  # pool: 5
+  # username: user1
+  # password: 1
+
+production: 
   adapter: postgresql
   encoding: unicode
-  database: ProductClassification_test
+  database: ProductClassification_development
   pool: 5
   username: user1
   password: 1
 
-production:
-  adapter: mysql
-  database: mydb
-  host: instance12338.db.xeround.com:8336
-  username: app4228753
-  password: 1
+# production:
+  # adapter: mysql
+  # database: mydb
+  # host: instance12338.db.xeround.com:8336
+  # username: app4228753
+  # password: 1

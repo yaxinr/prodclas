@@ -13,16 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20120410035850) do
 
-  create_table "class_okp", :id => false, :force => true do |t|
-    t.integer "id",                                           :null => false
-    t.string  "code",           :limit => 16,                 :null => false
-    t.string  "name",           :limit => 512,                :null => false
-    t.integer "control_number",                               :null => false
-    t.integer "parent_id"
-    t.string  "parent_code",    :limit => 16
-    t.integer "node_count",                    :default => 0, :null => false
-  end
-
   create_table "product_classes", :id => false, :force => true do |t|
     t.string   "code",       :limit => 10,  :null => false
     t.string   "name",       :limit => 512, :null => false
