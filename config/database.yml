@@ -67,9 +67,9 @@ test:
   # password: 1
 
 production: 
-  adapter: postgresql
+  adapter: postgresql 
   encoding: unicode
-  database: ProductClassification_development
+  database: ProductClassification_production
   pool: 5
   username: user1
   password: 1
