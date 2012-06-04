@@ -7,10 +7,10 @@ gem 'rails', '3.2.3'
 
 # group :production do
    # gem 'therubyracer-heroku', '~> 0.8.1.pre3' # you will need this too
-  gem 'mysql2'
+  # gem 'mysql2'
 # end
 # group :development, :test do
-  # gem 'pg'
+  gem 'pg'
 # end
 
 # Gems used only for assets and not required
@@ -20,7 +20,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer'
+  gem 'therubyracer'
 
   gem 'uglifier', '~> 1.0.3'
 end
